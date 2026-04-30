@@ -9,16 +9,21 @@ int main(void){
 	read (0, &number1, 4);
 
 	write (1, "Now, give me the number two? ", 29);
-	read (1, &number2, 4);
+	read (0, &number2, 4);
 
 	if ( number1 > number2){
         write(1, "Number one is greater than number two  \n", 40);
 	}
 
-        else{
+	else if ( number1 < number2){
 	
 	write (1,"The number two is greater than one  \n", 37);		
 	}	
 
+	else if ( number1 == number2){
+	
+	write(1, "The numbers are equal \n", 24 );
+	
+	}
 
 };
